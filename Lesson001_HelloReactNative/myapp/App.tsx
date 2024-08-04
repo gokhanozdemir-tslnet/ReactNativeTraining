@@ -24,7 +24,7 @@ function App(): React.JSX.Element {
           }}
           defaultValue="You can type here"
         />
-        <Cat name="myname" />
+        <Cat name="sdfsdfsdfs" />
         <Cat name="myname" />
         <PizzaTranslator />
       </View>
