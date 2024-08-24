@@ -28,10 +28,10 @@ const TaskItem = ({ key, task }: TaskItemProp) => {
             </TouchableOpacity> */}
         </View>
         <View style={styles.check}>
-            <TouchableOpacity style={{ backgroundColor: "green", margin: 5 }} onPress={() => updateTodo((Number)(task.id))}>
+            <TouchableOpacity style={{ backgroundColor: "green", margin: 5, padding: 5, borderRadius: 5 }} onPress={() => updateTodo((Number)(task.id))}>
                 <AntDesign name="check" size={16} color="white" />
             </TouchableOpacity>
-            <TouchableOpacity style={{ backgroundColor: "red", margin: 5 }} onPress={() => deleteTodo((Number)(task.id))}>
+            <TouchableOpacity style={{ backgroundColor: "red", margin: 5, padding: 5, borderRadius: 5 }} onPress={() => deleteTodo((Number)(task.id))}>
                 <AntDesign name="delete" size={16} color="white" />
             </TouchableOpacity>
             {/* <Button title="X" onPress={() => deleteTodo((Number)(task.id))} /> */}
@@ -54,12 +54,12 @@ const styles = StyleSheet.create({
 
     },
     taskIcon: {
-        flex: 0.5,
+        flex: 1,
         padding: 10,
         // backgroundColor: "red"
     },
     check: {
-        flex: 1,
+        flex: 2,
         padding: 10,
         alignItems: "center",
         flexDirection: "row"
