@@ -3,6 +3,7 @@ import { StyleSheet, View } from "react-native";
 import TaskList from "./components/taskList.component";
 import TaskInputPanel from "./components/taskInputPanel.component";
 import TodosProvider from "./store/task.context";
+import "./localization/i18n";
 
 export default function App() {
   return (

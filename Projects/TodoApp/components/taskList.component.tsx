@@ -17,7 +17,7 @@ const TaskList = () => {
 
     return <ScrollView style={styles.listPanel}>
         <View style={styles.listPanelContainer}>
-            {todos.map(task => <TaskItem task={task} />)}
+            {todos.map(task => <TaskItem key={task.id} task={task} />)}
         </View>
     </ScrollView>
 }
